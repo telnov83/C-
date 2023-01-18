@@ -4,7 +4,20 @@
 // a = 2 b = 10 -> max = 10
 // a = -9 b = -3 -> max = -3
 
-Console.WriteLine("Введите первое число: ");
-int number1 = Convert.ToInt32(Console.ReadLine());
-Console.WriteLine("введите второе число: ");
-int number2 = Convert.ToInt32(Console.ReadLine());
+Console.Write("Введите первое число: ");
+int num1 = Convert.ToInt32(Console.ReadLine());
+Console.Write("Введите второе число: ");
+int num2 = Convert.ToInt32(Console.ReadLine());
+
+if (num1 > num2)
+{
+    Console.Write($"Число {num1} больше, чем {num2}");
+}
+else if (num2 > num1)
+{
+    Console.Write($"Число {num2} больше, чем {num1}");
+}
+else
+{
+    Console.Write("Числа равны!");
+}
